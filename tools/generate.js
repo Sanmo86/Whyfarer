@@ -16,7 +16,7 @@ const V = '20260905'; // cache-buster — bump on every deploy
 // ⚠️ UPDATE THIS after your first deploy (real Vercel URL or custom domain),
 // then run `node tools/generate.js` again and redeploy. Used for canonical
 // links, hreflang alternates, sitemap.xml and Open Graph absolute URLs.
-const SITE_URL = 'https://whyfarer.vercel.app';
+const SITE_URL = 'https://whyfarer.world';
 
 // Paste the content="..." value Google Search Console gives you for the
 // "HTML tag" verification method (leave empty to skip). Re-run generate.js

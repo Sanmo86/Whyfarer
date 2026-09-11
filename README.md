@@ -4,7 +4,7 @@
 
 Why does blowing your nose in public embarrass people in Japan? Why does Bhutan track happiness instead of GDP? Why do Swedish offices stop everything for coffee, twice a day? Twenty-five customs from twenty-five countries, each one given an actual answer — not just a fun fact, the history and reasoning behind it.
 
-🔗 **Live:** [whyfarer.vercel.app](https://whyfarer.vercel.app) · 🌐 English + Spanish, with a language switcher on every page.
+🔗 **Live:** [whyfarer.world](https://whyfarer.world) · 🌐 English + Spanish, with a language switcher on every page.
 
 No ads, no tracking, no build step — just HTML, CSS, and a sprinkle of JS.
 

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://whyfarer.vercel.app/sitemap.xml
+Sitemap: https://whyfarer.world/sitemap.xml
