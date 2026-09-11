@@ -1,6 +1,20 @@
 # Whyfarer
 
-A magazine of world curiosities — 25 cultural customs explained, in English and Spanish. Static HTML/CSS/JS, no framework, no build step.
+*A magazine of world curiosities.*
+
+Why does blowing your nose in public embarrass people in Japan? Why does Bhutan track happiness instead of GDP? Why do Swedish offices stop everything for coffee, twice a day? Twenty-five customs from twenty-five countries, each one given an actual answer — not just a fun fact, the history and reasoning behind it.
+
+🔗 **Live:** *add your deployed URL here* · 🌐 English + Spanish, with a language switcher on every page.
+
+No ads, no tracking, no build step — just HTML, CSS, and a sprinkle of JS.
+
+## Features
+
+- **25 long-form articles** (~1,000 words each), fully bilingual with mirrored URLs (`/article-x.html` ↔ `/es/article-x.html`).
+- **Editorial magazine design** — drop caps, pull quotes, a reading-progress bar, subtle scroll parallax — that still reads perfectly with JavaScript off.
+- **Zero runtime dependencies**: plain HTML/CSS/JS. GSAP is loaded only for a couple of scroll effects.
+- **SEO-ready out of the box**: canonical URLs, `hreflang` alternates between locales, an auto-generated `sitemap.xml`.
+- **Content is data-driven** — articles live in a couple of JS files, not scattered across 56 hand-edited HTML pages.
 
 ## Structure
 
