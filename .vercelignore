@@ -1,0 +1,3 @@
+# Dev-only generator scripts — not needed to serve the static site.
+# Keep them in git (so you can regenerate later), just don't ship them.
+tools/
