@@ -9,6 +9,7 @@ const path = require('path');
 const { META } = require('./meta.js');
 const { ARTICLES_EN } = require('./content.en.js');
 const { ARTICLES_ES } = require('./content.es.js');
+const { PAGES } = require('./pages.js');
 
 const ROOT = path.join(__dirname, '..');
 const V = '20260905'; // cache-buster — bump on every deploy
@@ -80,7 +81,11 @@ const STRINGS = {
     creditsLinkWord: 'credits',
     skipLink: 'Skip to content',
     openMenu: 'Open menu', closeMenu: 'Close menu',
-    langLabel: 'Language'
+    langLabel: 'Language',
+    footerLegal: 'Legal',
+    footerAbout: 'About', footerContact: 'Contact', footerPrivacy: 'Privacy Policy', footerTerms: 'Terms of Use',
+    cookieMsg: 'We use cookies to keep Whyfarer running smoothly and, where enabled, to show relevant ads.',
+    cookieAccept: 'Got it', cookieLearnMore: 'Privacy Policy'
   },
   es: {
     htmlLang: 'es',
@@ -119,7 +124,11 @@ const STRINGS = {
     creditsLinkWord: 'créditos',
     skipLink: 'Saltar al contenido',
     openMenu: 'Abrir menú', closeMenu: 'Cerrar menú',
-    langLabel: 'Idioma'
+    langLabel: 'Idioma',
+    footerLegal: 'Legal',
+    footerAbout: 'Acerca de', footerContact: 'Contacto', footerPrivacy: 'Política de Privacidad', footerTerms: 'Términos de Uso',
+    cookieMsg: 'Usamos cookies para que Whyfarer funcione bien y, cuando estén activas, para mostrar anuncios relevantes.',
+    cookieAccept: 'Entendido', cookieLearnMore: 'Política de Privacidad'
   }
 };
 
@@ -262,6 +271,15 @@ function footer(loc) {
             <li><a class="nav-link" href="index.html">${s.footerHome}</a></li>
             <li><a class="nav-link" href="archive.html">${s.footerArchive}</a></li>
             <li><a class="nav-link" href="credits.html">${s.footerCredits}</a></li>
+            <li><a class="nav-link" href="about.html">${s.footerAbout}</a></li>
+            <li><a class="nav-link" href="contact.html">${s.footerContact}</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>${s.footerLegal}</h3>
+          <ul>
+            <li><a class="nav-link" href="privacy.html">${s.footerPrivacy}</a></li>
+            <li><a class="nav-link" href="terms.html">${s.footerTerms}</a></li>
           </ul>
         </div>
       </div>
@@ -271,6 +289,16 @@ function footer(loc) {
       </div>
     </div>
   </footer>`;
+}
+
+function cookieBanner(loc) {
+  const s = loc.s;
+  return `<div class="cookie-banner" id="cookie-banner" hidden>
+    <div class="container cookie-banner-inner">
+      <p>${s.cookieMsg} <a href="privacy.html">${s.cookieLearnMore}</a></p>
+      <button class="btn btn-primary" id="cookie-accept">${s.cookieAccept}</button>
+    </div>
+  </div>`;
 }
 
 function scripts(loc) {
@@ -288,6 +316,7 @@ ${head(loc, opts)}
 </head>
 <body>
   ${opts.body}
+  ${cookieBanner(loc)}
   ${scripts(loc)}
 </body>
 </html>
@@ -581,11 +610,60 @@ function buildCredits(loc) {
 }
 
 /* ---------------------------------------------------------------- */
+/* STATIC PAGES (privacy / terms / about / contact)                  */
+/* ---------------------------------------------------------------- */
+
+const STATIC_PAGE_KEYS = ['about', 'contact', 'privacy', 'terms'];
+
+function renderDocSections(sections) {
+  return sections.map(function (sec) {
+    const heading = sec.h ? `<h2>${escHTML(sec.h)}</h2>` : '';
+    // Section paragraphs already contain hand-written <a>/<em> tags — trusted
+    // static copy (not user input), so it's inserted as-is rather than escaped.
+    const paras = sec.p.map(function (p) { return `<p>${p}</p>`; }).join('\n      ');
+    return `${heading}\n      ${paras}`;
+  }).join('\n      ');
+}
+
+function buildStaticPage(loc, key) {
+  const s = loc.s;
+  const data = PAGES[loc.code][key];
+
+  const extra = key === 'contact'
+    ? `<p class="contact-cta"><a class="btn btn-primary" href="mailto:${data.email}">${data.emailCta} <span class="btn-arrow">→</span></a></p>`
+    : '';
+
+  const body = `${header(loc, '', `${data.slug}.html`)}
+  <main id="main">
+    <div class="container archive-head">
+      <p class="kicker">${escHTML(data.kicker)}</p>
+      <h1>${escHTML(data.title)}</h1>
+      <p class="dek">${escHTML(data.dek)}</p>
+      ${data.meta ? `<p class="doc-meta">${escHTML(data.meta)}</p>` : ''}
+    </div>
+    <div class="container">
+      <div class="doc-body">
+        ${renderDocSections(data.sections)}
+        ${extra}
+      </div>
+    </div>
+  </main>
+  ${footer(loc)}`;
+
+  write(loc, `${data.slug}.html`, page(loc, {
+    title: `${data.title} — ${s.brand}`,
+    desc: data.dek,
+    filename: `${data.slug}.html`,
+    body
+  }));
+}
+
+/* ---------------------------------------------------------------- */
 /* SITEMAP + ROBOTS                                                   */
 /* ---------------------------------------------------------------- */
 
 function buildSitemapAndRobots() {
-  const filenames = ['index.html', 'archive.html', 'credits.html']
+  const filenames = ['index.html', 'archive.html', 'credits.html', 'about.html', 'contact.html', 'privacy.html', 'terms.html']
     .concat(META.map(function (m) { return `article-${m.slug}.html`; }));
 
   const today = new Date().toISOString().slice(0, 10);
@@ -628,6 +706,7 @@ Sitemap: ${SITE_URL}/sitemap.xml
   loc.articles.forEach(function (a) { buildArticle(loc, a); });
   buildArchive(loc);
   buildCredits(loc);
+  STATIC_PAGE_KEYS.forEach(function (key) { buildStaticPage(loc, key); });
 });
 
 buildSitemapAndRobots();

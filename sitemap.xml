@@ -2,392 +2,448 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://whyfarer.world/index.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/index.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/index.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/index.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/es/index.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/index.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/index.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/index.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/archive.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/archive.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/archive.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/archive.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/es/archive.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/archive.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/archive.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/archive.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/credits.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/credits.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/credits.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/credits.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/es/credits.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/credits.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/credits.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/credits.html"/>
   </url>
   <url>
+    <loc>https://whyfarer.world/about.html</loc>
+    <lastmod>2026-09-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/about.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/about.html"/>
+  </url>
+  <url>
+    <loc>https://whyfarer.world/es/about.html</loc>
+    <lastmod>2026-09-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/about.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/about.html"/>
+  </url>
+  <url>
+    <loc>https://whyfarer.world/contact.html</loc>
+    <lastmod>2026-09-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/contact.html"/>
+  </url>
+  <url>
+    <loc>https://whyfarer.world/es/contact.html</loc>
+    <lastmod>2026-09-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/contact.html"/>
+  </url>
+  <url>
+    <loc>https://whyfarer.world/privacy.html</loc>
+    <lastmod>2026-09-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/privacy.html"/>
+  </url>
+  <url>
+    <loc>https://whyfarer.world/es/privacy.html</loc>
+    <lastmod>2026-09-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/privacy.html"/>
+  </url>
+  <url>
+    <loc>https://whyfarer.world/terms.html</loc>
+    <lastmod>2026-09-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/terms.html"/>
+  </url>
+  <url>
+    <loc>https://whyfarer.world/es/terms.html</loc>
+    <lastmod>2026-09-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/terms.html"/>
+  </url>
+  <url>
     <loc>https://whyfarer.world/article-japan-nose-blowing.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/article-japan-nose-blowing.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/article-japan-nose-blowing.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/article-japan-nose-blowing.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/es/article-japan-nose-blowing.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/article-japan-nose-blowing.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/article-japan-nose-blowing.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/article-japan-nose-blowing.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/article-india-sacred-cow.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/article-india-sacred-cow.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/article-india-sacred-cow.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/article-india-sacred-cow.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/es/article-india-sacred-cow.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/article-india-sacred-cow.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/article-india-sacred-cow.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/article-india-sacred-cow.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/article-finland-sauna-queue.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/article-finland-sauna-queue.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/article-finland-sauna-queue.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/article-finland-sauna-queue.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/es/article-finland-sauna-queue.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/article-finland-sauna-queue.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/article-finland-sauna-queue.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/article-finland-sauna-queue.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/article-south-korea-age-system.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/article-south-korea-age-system.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/article-south-korea-age-system.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/article-south-korea-age-system.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/es/article-south-korea-age-system.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/article-south-korea-age-system.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/article-south-korea-age-system.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/article-south-korea-age-system.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/article-france-restaurant-bill.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/article-france-restaurant-bill.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/article-france-restaurant-bill.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/article-france-restaurant-bill.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/es/article-france-restaurant-bill.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/article-france-restaurant-bill.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/article-france-restaurant-bill.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/article-france-restaurant-bill.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/article-mexico-day-of-the-dead.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/article-mexico-day-of-the-dead.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/article-mexico-day-of-the-dead.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/article-mexico-day-of-the-dead.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/es/article-mexico-day-of-the-dead.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/article-mexico-day-of-the-dead.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/article-mexico-day-of-the-dead.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/article-mexico-day-of-the-dead.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/article-netherlands-no-curtains.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/article-netherlands-no-curtains.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/article-netherlands-no-curtains.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/article-netherlands-no-curtains.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/es/article-netherlands-no-curtains.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/article-netherlands-no-curtains.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/article-netherlands-no-curtains.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/article-netherlands-no-curtains.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/article-thailand-sacred-head.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/article-thailand-sacred-head.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/article-thailand-sacred-head.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/article-thailand-sacred-head.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/es/article-thailand-sacred-head.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/article-thailand-sacred-head.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/article-thailand-sacred-head.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/article-thailand-sacred-head.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/article-germany-splitting-bills.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/article-germany-splitting-bills.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/article-germany-splitting-bills.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/article-germany-splitting-bills.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/es/article-germany-splitting-bills.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/article-germany-splitting-bills.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/article-germany-splitting-bills.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/article-germany-splitting-bills.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/article-ethiopia-calendar.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/article-ethiopia-calendar.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/article-ethiopia-calendar.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/article-ethiopia-calendar.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/es/article-ethiopia-calendar.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/article-ethiopia-calendar.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/article-ethiopia-calendar.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/article-ethiopia-calendar.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/article-italy-cappuccino-rule.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/article-italy-cappuccino-rule.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/article-italy-cappuccino-rule.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/article-italy-cappuccino-rule.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/es/article-italy-cappuccino-rule.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/article-italy-cappuccino-rule.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/article-italy-cappuccino-rule.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/article-italy-cappuccino-rule.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/article-norway-babies-outside.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/article-norway-babies-outside.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/article-norway-babies-outside.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/article-norway-babies-outside.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/es/article-norway-babies-outside.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/article-norway-babies-outside.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/article-norway-babies-outside.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/article-norway-babies-outside.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/article-china-number-four.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/article-china-number-four.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/article-china-number-four.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/article-china-number-four.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/es/article-china-number-four.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/article-china-number-four.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/article-china-number-four.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/article-china-number-four.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/article-argentina-mate-sharing.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/article-argentina-mate-sharing.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/article-argentina-mate-sharing.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/article-argentina-mate-sharing.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/es/article-argentina-mate-sharing.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/article-argentina-mate-sharing.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/article-argentina-mate-sharing.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/article-argentina-mate-sharing.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/article-bhutan-happiness-index.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/article-bhutan-happiness-index.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/article-bhutan-happiness-index.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/article-bhutan-happiness-index.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/es/article-bhutan-happiness-index.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/article-bhutan-happiness-index.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/article-bhutan-happiness-index.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/article-bhutan-happiness-index.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/article-russia-no-smiling.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/article-russia-no-smiling.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/article-russia-no-smiling.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/article-russia-no-smiling.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/es/article-russia-no-smiling.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/article-russia-no-smiling.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/article-russia-no-smiling.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/article-russia-no-smiling.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/article-portugal-codfish.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/article-portugal-codfish.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/article-portugal-codfish.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/article-portugal-codfish.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/es/article-portugal-codfish.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/article-portugal-codfish.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/article-portugal-codfish.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/article-portugal-codfish.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/article-philippines-big-families.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/article-philippines-big-families.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/article-philippines-big-families.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/article-philippines-big-families.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/es/article-philippines-big-families.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/article-philippines-big-families.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/article-philippines-big-families.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/article-philippines-big-families.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/article-switzerland-punctual-trains.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/article-switzerland-punctual-trains.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/article-switzerland-punctual-trains.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/article-switzerland-punctual-trains.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/es/article-switzerland-punctual-trains.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/article-switzerland-punctual-trains.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/article-switzerland-punctual-trains.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/article-switzerland-punctual-trains.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/article-morocco-haggling.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/article-morocco-haggling.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/article-morocco-haggling.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/article-morocco-haggling.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/es/article-morocco-haggling.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/article-morocco-haggling.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/article-morocco-haggling.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/article-morocco-haggling.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/article-iceland-no-surnames.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/article-iceland-no-surnames.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/article-iceland-no-surnames.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/article-iceland-no-surnames.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/es/article-iceland-no-surnames.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/article-iceland-no-surnames.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/article-iceland-no-surnames.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/article-iceland-no-surnames.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/article-greece-breaking-plates.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/article-greece-breaking-plates.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/article-greece-breaking-plates.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/article-greece-breaking-plates.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/es/article-greece-breaking-plates.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/article-greece-breaking-plates.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/article-greece-breaking-plates.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/article-greece-breaking-plates.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/article-singapore-chewing-gum-ban.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/article-singapore-chewing-gum-ban.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/article-singapore-chewing-gum-ban.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/article-singapore-chewing-gum-ban.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/es/article-singapore-chewing-gum-ban.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/article-singapore-chewing-gum-ban.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/article-singapore-chewing-gum-ban.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/article-singapore-chewing-gum-ban.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/article-peru-guinea-pig.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/article-peru-guinea-pig.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/article-peru-guinea-pig.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/article-peru-guinea-pig.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/es/article-peru-guinea-pig.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/article-peru-guinea-pig.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/article-peru-guinea-pig.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/article-peru-guinea-pig.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/article-sweden-fika.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/article-sweden-fika.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/article-sweden-fika.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/article-sweden-fika.html"/>
   </url>
   <url>
     <loc>https://whyfarer.world/es/article-sweden-fika.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://whyfarer.world/article-sweden-fika.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://whyfarer.world/es/article-sweden-fika.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://whyfarer.world/article-sweden-fika.html"/>

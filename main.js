@@ -169,6 +169,27 @@
     });
   }
 
+  /* --- Cookie consent banner ---
+     Purely informational for now (no ad/analytics script reads this yet).
+     When Google AdSense/Analytics is added, gate those <script> tags on
+     `localStorage.getItem("wf-cookie-consent") === "accepted"` (or load
+     them unconditionally for strictly-necessary-only setups — check current
+     policy before wiring this up for real). */
+  function initCookieBanner() {
+    var KEY = "wf-cookie-consent";
+    var banner = $("#cookie-banner");
+    var acceptBtn = $("#cookie-accept");
+    if (!banner || !acceptBtn) return;
+    try {
+      if (localStorage.getItem(KEY) === "accepted") return;
+    } catch (e) { /* localStorage unavailable (private mode etc.) — show banner anyway */ }
+    banner.hidden = false;
+    acceptBtn.addEventListener("click", function () {
+      try { localStorage.setItem(KEY, "accepted"); } catch (e) {}
+      banner.hidden = true;
+    });
+  }
+
   function boot() {
     safe(initMasthead, "initMasthead");
     safe(initMobileNav, "initMobileNav");
@@ -177,6 +198,7 @@
     safe(initCardTilt, "initCardTilt");
     safe(initArchiveFilter, "initArchiveFilter");
     safe(initViewTransitions, "initViewTransitions");
+    safe(initCookieBanner, "initCookieBanner");
 
     if (window.gsap && window.ScrollTrigger) {
       try { gsap.registerPlugin(ScrollTrigger); } catch (_) {}
