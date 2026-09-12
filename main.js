@@ -170,11 +170,10 @@
   }
 
   /* --- Cookie consent banner ---
-     Purely informational for now (no ad/analytics script reads this yet).
-     When Google AdSense/Analytics is added, gate those <script> tags on
-     `localStorage.getItem("wf-cookie-consent") === "accepted"` (or load
-     them unconditionally for strictly-necessary-only setups — check current
-     policy before wiring this up for real). */
+     Wired to Google's Consent Mode v2 (see the inline gtag snippet in
+     <head>, generated only when GA_MEASUREMENT_ID is set in generate.js).
+     Accepting here flips analytics_storage/ad_* from "denied" to "granted"
+     for the rest of the session and future visits. */
   function initCookieBanner() {
     var KEY = "wf-cookie-consent";
     var banner = $("#cookie-banner");
@@ -186,6 +185,14 @@
     banner.hidden = false;
     acceptBtn.addEventListener("click", function () {
       try { localStorage.setItem(KEY, "accepted"); } catch (e) {}
+      if (window.gtag) {
+        gtag("consent", "update", {
+          ad_storage: "granted",
+          ad_user_data: "granted",
+          ad_personalization: "granted",
+          analytics_storage: "granted"
+        });
+      }
       banner.hidden = true;
     });
   }

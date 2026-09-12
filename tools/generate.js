@@ -26,6 +26,11 @@ const SITE_URL = 'https://whyfarer.world';
 // project root, no code change needed.
 const GOOGLE_SITE_VERIFICATION = '';
 
+// Google Analytics 4 Measurement ID (format "G-XXXXXXXXXX"), from
+// analytics.google.com → Admin → Data Streams → your web stream.
+// Leave empty to skip — no GA code is emitted at all until this is set.
+const GA_MEASUREMENT_ID = '';
+
 function escHTML(s) {
   return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
     return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
@@ -143,6 +148,32 @@ function bySlug(loc, slug) { return loc.articles.find(function (a) { return a.sl
 /* HEAD / HEADER / FOOTER / SCRIPTS                                  */
 /* ---------------------------------------------------------------- */
 
+// Google Analytics 4, wired to Google's Consent Mode v2: analytics_storage
+// (and the ad_* signals, unused here but required by the API) default to
+// "denied" until the visitor accepts our cookie banner — checked synchronously
+// against localStorage so a returning visitor who already accepted doesn't
+// get a flash of denied-then-granted. See main.js `initCookieBanner`, which
+// calls `gtag('consent','update', ...)` on click.
+function gaSnippet() {
+  if (!GA_MEASUREMENT_ID) return '';
+  const id = escHTML(GA_MEASUREMENT_ID);
+  return `<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  (function () {
+    var granted = false;
+    try { granted = localStorage.getItem('wf-cookie-consent') === 'accepted'; } catch (e) {}
+    var state = granted ? 'granted' : 'denied';
+    gtag('consent', 'default', { ad_storage: state, ad_user_data: state, ad_personalization: state, analytics_storage: state });
+  })();
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=${id}"></script>
+<script>
+  gtag('js', new Date());
+  gtag('config', '${id}');
+</script>`;
+}
+
 function head(loc, opts) {
   const s = loc.s;
   const ap = loc.assetPrefix;
@@ -167,6 +198,7 @@ function head(loc, opts) {
 
   return `<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+${gaSnippet()}
 <title>${title}</title>
 <meta name="description" content="${desc}">
 <meta name="color-scheme" content="light">
