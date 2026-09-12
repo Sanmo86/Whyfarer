@@ -70,6 +70,7 @@ const STRINGS = {
     byline: 'WHYFARER Editors',
     photoBy: 'Photo:', licensedUnder: 'licensed under CC', seeOriginal: 'See original ↗',
     aboutBlurb: 'About WHYFARER. We’re a digital magazine dedicated to explaining, unhurried and without judgment, the customs that make every corner of the world different. We publish a new why every week.',
+    sourcesHeading: 'Sources',
     keepReading: 'Keep reading',
     archiveKicker: 'Full archive',
     archiveTitle: 'All 25 customs, country by country',
@@ -113,6 +114,7 @@ const STRINGS = {
     byline: 'Redacción WHYFARER',
     photoBy: 'Foto:', licensedUnder: 'licencia CC', seeOriginal: 'Ver original ↗',
     aboutBlurb: 'Sobre WHYFARER. Somos una revista digital dedicada a explicar, sin prisa y sin prejuicio, las costumbres que hacen distinto a cada rincón del mundo. Publicamos un nuevo porqué cada semana.',
+    sourcesHeading: 'Fuentes',
     keepReading: 'Sigue leyendo',
     archiveKicker: 'Archivo completo',
     archiveTitle: 'Las 25 costumbres, país por país',
@@ -498,6 +500,19 @@ function renderBody(a) {
   return out.join('\n      ');
 }
 
+function renderSources(loc, a) {
+  if (!a.sources || !a.sources.length) return '';
+  const items = a.sources.map(function (src) {
+    return `<li><a href="${escHTML(src.url)}" target="_blank" rel="noopener noreferrer">${escHTML(src.title)}</a> — ${escHTML(src.publisher)}</li>`;
+  }).join('\n          ');
+  return `<div class="sources-box">
+          <h2>${loc.s.sourcesHeading}</h2>
+          <ul>
+          ${items}
+          </ul>
+        </div>`;
+}
+
 function buildArticle(loc, a) {
   const s = loc.s;
   const ap = loc.assetPrefix;
@@ -528,6 +543,7 @@ function buildArticle(loc, a) {
           ${renderBody(a)}
         </div>
         <div class="article-foot">
+          ${renderSources(loc, a)}
           <p class="about-blurb">${s.aboutBlurb}</p>
         </div>
       </div>

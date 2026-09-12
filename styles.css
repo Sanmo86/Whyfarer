@@ -436,6 +436,16 @@ figure.article-hero-figure figcaption a { text-decoration: underline; text-under
 }
 .about-blurb strong { color: var(--ink); font-family: var(--serif-display); font-style: italic; }
 
+.sources-box { padding-top: .4rem; }
+.sources-box h2 {
+  font-family: var(--sans); font-size: .78rem; font-weight: 700; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--ink-mute); margin-bottom: .8rem;
+}
+.sources-box ul { display: flex; flex-direction: column; gap: .5rem; }
+.sources-box li { font-size: .92rem; color: var(--ink-mute); line-height: 1.5; }
+.sources-box a { color: var(--ink); text-decoration: underline; text-underline-offset: 2px; }
+.sources-box a:hover { color: var(--accent); }
+
 .related-heading { font-size: 1.5rem; margin-bottom: 1.4rem; }
 
 /* --- Archive --- */
