@@ -576,7 +576,7 @@ function buildArticle(loc, a) {
         <p class="meta-row"><span>${s.byline}</span><span class="dot"></span><span>${escHTML(a.readTime)} ${s.minRead}</span><span class="dot"></span><span>${a.flag} ${escHTML(a.country)}</span></p>
       </div>
       <figure class="article-hero-figure container">
-        <div class="hero-parallax" style="overflow:hidden;border-radius:2px;">
+        <div class="hero-parallax photo-frame">
           <img src="${ap}${a.hero}" alt="${escHTML(a.alt)}" fetchpriority="high">
         </div>
         ${credit ? `<figcaption><span>${s.photoBy} ${escHTML(credit.creator)}, ${s.licensedUnder} ${escHTML((credit.license || '').toUpperCase())} ${escHTML(credit.license_version || '')}</span><a href="${escHTML(credit.foreign_landing_url)}" target="_blank" rel="noopener noreferrer">${s.seeOriginal}</a></figcaption>` : ''}
