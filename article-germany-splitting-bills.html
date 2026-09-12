@@ -3,7 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  (function () {
+    var granted = false;
+    try { granted = localStorage.getItem('wf-cookie-consent') === 'accepted'; } catch (e) {}
+    var state = granted ? 'granted' : 'denied';
+    gtag('consent', 'default', { ad_storage: state, ad_user_data: state, ad_personalization: state, analytics_storage: state });
+  })();
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MQCCZQD50Q"></script>
+<script>
+  gtag('js', new Date());
+  gtag('config', 'G-MQCCZQD50Q');
+</script>
 <title>The Country Where Owing a Friend Twenty Cents Is Serious Business — WHYFARER</title>
 <meta name="description" content="In Germany, splitting the bill down to the last cent among friends isn&#39;t stinginess — it&#39;s a form of mutual respect deeply rooted in the culture.">
 <meta name="color-scheme" content="light">

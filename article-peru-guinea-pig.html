@@ -3,7 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  (function () {
+    var granted = false;
+    try { granted = localStorage.getItem('wf-cookie-consent') === 'accepted'; } catch (e) {}
+    var state = granted ? 'granted' : 'denied';
+    gtag('consent', 'default', { ad_storage: state, ad_user_data: state, ad_personalization: state, analytics_storage: state });
+  })();
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MQCCZQD50Q"></script>
+<script>
+  gtag('js', new Date());
+  gtag('config', 'G-MQCCZQD50Q');
+</script>
 <title>The Animal That&#39;s Dinner in One Country and a Stuffed-Toy-Worthy Pet in Another — WHYFARER</title>
 <meta name="description" content="While guinea pigs live in cages as pets in countless Western homes, in the Peruvian Andes they&#39;ve been a central ingredient of the cuisine for more than five thousand years.">
 <meta name="color-scheme" content="light">

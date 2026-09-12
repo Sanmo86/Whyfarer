@@ -3,7 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  (function () {
+    var granted = false;
+    try { granted = localStorage.getItem('wf-cookie-consent') === 'accepted'; } catch (e) {}
+    var state = granted ? 'granted' : 'denied';
+    gtag('consent', 'default', { ad_storage: state, ad_user_data: state, ad_personalization: state, analytics_storage: state });
+  })();
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MQCCZQD50Q"></script>
+<script>
+  gtag('js', new Date());
+  gtag('config', 'G-MQCCZQD50Q');
+</script>
 <title>Breaking Plates: The Greek Party That Starts With a Small Disaster — WHYFARER</title>
 <meta name="description" content="At the liveliest Greek tavernas, once the music picks up, some plates end up smashed on the floor to applause. It isn&#39;t an accident or a loss of control — it&#39;s joy, deliberately loud.">
 <meta name="color-scheme" content="light">

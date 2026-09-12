@@ -3,7 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  (function () {
+    var granted = false;
+    try { granted = localStorage.getItem('wf-cookie-consent') === 'accepted'; } catch (e) {}
+    var state = granted ? 'granted' : 'denied';
+    gtag('consent', 'default', { ad_storage: state, ad_user_data: state, ad_personalization: state, analytics_storage: state });
+  })();
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MQCCZQD50Q"></script>
+<script>
+  gtag('js', new Date());
+  gtag('config', 'G-MQCCZQD50Q');
+</script>
 <title>Las casas sin cortinas que presumen su vida privada al mundo — WHYFARER</title>
 <meta name="description" content="Caminar de noche por una calle holandesa es como recorrer una galería de salas de estar iluminadas. Nadie las oculta, y eso dice más de lo que parece sobre la sociedad neerlandesa.">
 <meta name="color-scheme" content="light">

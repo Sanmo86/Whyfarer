@@ -29,7 +29,7 @@ const GOOGLE_SITE_VERIFICATION = '';
 // Google Analytics 4 Measurement ID (format "G-XXXXXXXXXX"), from
 // analytics.google.com → Admin → Data Streams → your web stream.
 // Leave empty to skip — no GA code is emitted at all until this is set.
-const GA_MEASUREMENT_ID = '';
+const GA_MEASUREMENT_ID = 'G-MQCCZQD50Q';
 
 function escHTML(s) {
   return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {

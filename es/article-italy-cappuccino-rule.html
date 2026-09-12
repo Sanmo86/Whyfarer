@@ -3,7 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  (function () {
+    var granted = false;
+    try { granted = localStorage.getItem('wf-cookie-consent') === 'accepted'; } catch (e) {}
+    var state = granted ? 'granted' : 'denied';
+    gtag('consent', 'default', { ad_storage: state, ad_user_data: state, ad_personalization: state, analytics_storage: state });
+  })();
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MQCCZQD50Q"></script>
+<script>
+  gtag('js', new Date());
+  gtag('config', 'G-MQCCZQD50Q');
+</script>
 <title>El crimen de pedir un capuchino después de mediodía en Italia — WHYFARER</title>
 <meta name="description" content="Pedir un capuchino después de comer en Italia puede ganarte una mirada de desaprobación silenciosa. Detrás de esa regla no escrita hay siglos de tradición cafetera y una lógica digestiva muy concreta.">
 <meta name="color-scheme" content="light">
