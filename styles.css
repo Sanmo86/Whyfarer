@@ -284,6 +284,13 @@ ul, ol { list-style: none; padding: 0; }
 .dato-box p { font-size: .98rem; color: var(--ink-soft); }
 .dato-box strong { color: var(--ink); }
 
+/* Mid-article inline photo */
+.inline-figure { margin: 2.4em 0; }
+.inline-figure img {
+  width: 100%; aspect-ratio: 3 / 2; object-fit: cover;
+  border-radius: 2px;
+}
+
 /* Figure / image credit caption */
 figure.article-hero-figure { margin: 0; }
 figure.article-hero-figure figcaption {

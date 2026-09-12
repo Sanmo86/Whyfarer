@@ -7,6 +7,7 @@
 const fs = require('fs');
 const path = require('path');
 const { META } = require('./meta.js');
+const { INLINE_IMAGES } = require('./inline-images.js');
 const { ARTICLES_EN } = require('./content.en.js');
 const { ARTICLES_ES } = require('./content.es.js');
 const { PAGES } = require('./pages.js');
@@ -480,7 +481,8 @@ function relatedFor(loc, a) {
   return picks.slice(0, 3);
 }
 
-function renderBody(a) {
+function renderBody(loc, a) {
+  const ap = loc.assetPrefix;
   const paras = a.content.map(function (p, idx) {
     const cls = idx === 0 ? ' class="lede"' : '';
     return `<p${cls}>${escInline(p)}</p>`;
@@ -495,7 +497,21 @@ function renderBody(a) {
   out.push.apply(out, paras.slice(insertAt, insertAt + 2));
   const datoAt = Math.min(insertAt + 2, paras.length);
   out.push(datoHTML);
-  out.push.apply(out, paras.slice(datoAt));
+
+  const tail = paras.slice(datoAt);
+  const inline = INLINE_IMAGES[a.slug];
+  const imgHTML = inline
+    ? `<figure class="inline-figure"><img src="${ap}${inline.file}" alt="${escHTML(inline.alt[loc.code])}" loading="lazy" decoding="async"></figure>`
+    : '';
+
+  if (imgHTML && tail.length > 1) {
+    out.push.apply(out, tail.slice(0, -1));
+    out.push(imgHTML);
+    out.push(tail[tail.length - 1]);
+  } else {
+    out.push.apply(out, tail);
+    if (imgHTML) out.push(imgHTML);
+  }
 
   return out.join('\n      ');
 }
@@ -540,7 +556,7 @@ function buildArticle(loc, a) {
 
       <div class="container">
         <div class="article-body">
-          ${renderBody(a)}
+          ${renderBody(loc, a)}
         </div>
         <div class="article-foot">
           ${renderSources(loc, a)}
