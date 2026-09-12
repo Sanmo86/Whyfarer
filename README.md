@@ -28,21 +28,31 @@ No ads, no tracking, no build step — just HTML, CSS, and a sprinkle of JS.
 
 Don't edit the `.html` files by hand — they're generated. Edit the source instead:
 
-- `tools/meta.js` — shared per-article data (slug, category, flag, image).
-- `tools/content.en.js` / `tools/content.es.js` — the actual article text, per language.
-- `tools/generate.js` — page templates, site strings, and the `SITE_URL` constant.
+- `tools/meta.js` — shared per-article data (slug, category, flag, hero image, sources).
+- `tools/content.en.js` / `tools/content.es.js` — the article prose, per language (9 paragraphs, spread across H2 sections at generation time).
+- `tools/tips.js` — the "What to Know If You Visit" practical tips + the related-article link pairing for each piece.
+- `tools/inline-images.js` — the second, mid-article photo per piece.
+- `tools/pages.js` — Privacy/Terms/About/Contact copy.
+- `tools/generate.js` — page templates, section headings, site strings, and the `SITE_URL` constant.
 
 Then rebuild:
 
 ```bash
-node tools/generate.js
+npm run build
+# or: node tools/generate.js
 ```
 
 To preview locally:
 
 ```bash
-node tools/serve.js
+npm run serve
 # open http://localhost:8765
+```
+
+To re-optimize images after adding new ones (resizes to 1400px max width, re-encodes at quality 78 — install `npm install` first, `jimp` is a dev-only tool, never shipped):
+
+```bash
+npm run optimize-images
 ```
 
 ## Deploying

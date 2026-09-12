@@ -425,6 +425,34 @@ figure.article-hero-figure figcaption a { text-decoration: underline; text-under
   font-size: 1.12rem;
 }
 .article-body p { margin-bottom: 1.5em; }
+.article-body h2 {
+  font-size: 1.55rem;
+  margin: 2.2em 0 .8em;
+}
+.article-body h2:first-child { margin-top: 0; }
+.tips-list {
+  margin: 0 0 1.5em;
+  display: flex; flex-direction: column; gap: .9em;
+}
+.tips-list li {
+  position: relative;
+  padding-left: 1.6em;
+  color: var(--ink-soft);
+}
+.tips-list li::before {
+  content: "✓";
+  position: absolute; left: 0; top: .05em;
+  color: var(--accent);
+  font-weight: 700;
+}
+.in-article-links {
+  font-style: italic;
+  color: var(--ink-mute);
+  border-top: 1px solid var(--line);
+  padding-top: 1.5em;
+}
+.in-article-links a { text-decoration: underline; text-underline-offset: 2px; color: var(--ink); }
+.in-article-links a:hover { color: var(--accent); }
 .article-body p.lede::first-letter {
   font-family: var(--serif-display);
   font-style: italic;

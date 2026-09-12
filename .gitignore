@@ -7,3 +7,5 @@ Thumbs.db
 
 # Local preview artifacts
 *.log
+node_modules/
+assets/img.backup/

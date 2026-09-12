@@ -1,0 +1,19 @@
+{
+  "name": "whyfarer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A magazine of world curiosities — static site generator and dev tools.",
+  "scripts": {
+    "build": "node tools/generate.js",
+    "serve": "node tools/serve.js",
+    "optimize-images": "node tools/optimize-images.js"
+  },
+  "devDependencies": {
+    "jimp": "^1.6.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sanmo86/Whyfarer.git"
+  },
+  "license": "UNLICENSED"
+}

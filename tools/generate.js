@@ -8,6 +8,7 @@ const fs = require('fs');
 const path = require('path');
 const { META } = require('./meta.js');
 const { INLINE_IMAGES } = require('./inline-images.js');
+const { TIPS, LINKS } = require('./tips.js');
 const { ARTICLES_EN } = require('./content.en.js');
 const { ARTICLES_ES } = require('./content.es.js');
 const { PAGES } = require('./pages.js');
@@ -72,6 +73,10 @@ const STRINGS = {
     photoBy: 'Photo:', licensedUnder: 'licensed under CC', seeOriginal: 'See original ↗',
     aboutBlurb: 'About WHYFARER. We’re a digital magazine dedicated to explaining, unhurried and without judgment, the customs that make every corner of the world different. We publish a new why every week.',
     sourcesHeading: 'Sources',
+    h2Opening: `What's Really Going On`, h2Origin: 'Where This Comes From', h2Beyond: 'Beyond the Basics',
+    h2Tips: 'What to Know If You Visit', h2Closing: 'The Bigger Picture',
+    relatedIntro: `Curious how nearby cultures handle similar rules? Don't miss our pieces on`,
+    relatedAnd: 'and',
     keepReading: 'Keep reading',
     archiveKicker: 'Full archive',
     archiveTitle: 'All 25 customs, country by country',
@@ -116,6 +121,10 @@ const STRINGS = {
     photoBy: 'Foto:', licensedUnder: 'licencia CC', seeOriginal: 'Ver original ↗',
     aboutBlurb: 'Sobre WHYFARER. Somos una revista digital dedicada a explicar, sin prisa y sin prejuicio, las costumbres que hacen distinto a cada rincón del mundo. Publicamos un nuevo porqué cada semana.',
     sourcesHeading: 'Fuentes',
+    h2Opening: 'Qué está pasando realmente', h2Origin: 'De dónde viene todo esto', h2Beyond: 'Más allá de lo básico',
+    h2Tips: 'Qué debes saber si viajas', h2Closing: 'El panorama completo',
+    relatedIntro: '¿Tienes curiosidad por saber cómo culturas cercanas manejan reglas parecidas? No te pierdas nuestros artículos sobre',
+    relatedAnd: 'y',
     keepReading: 'Sigue leyendo',
     archiveKicker: 'Archivo completo',
     archiveTitle: 'Las 25 costumbres, país por país',
@@ -482,38 +491,57 @@ function relatedFor(loc, a) {
 }
 
 function renderBody(loc, a) {
+  const s = loc.s;
   const ap = loc.assetPrefix;
-  const paras = a.content.map(function (p, idx) {
+  const p = a.content.map(function (para, idx) {
     const cls = idx === 0 ? ' class="lede"' : '';
-    return `<p${cls}>${escInline(p)}</p>`;
+    return `<p${cls}>${escInline(para)}</p>`;
   });
 
-  const insertAt = Math.min(3, paras.length - 1);
   const pullHTML = `<blockquote class="pull-quote">${escInline(a.pullQuote)}</blockquote>`;
   const datoHTML = `<aside class="dato-box"><span class="glyph" aria-hidden="true">✦</span><p><strong>${a.factLabel}</strong> ${escInline(a.fact)}</p></aside>`;
 
-  const out = paras.slice(0, insertAt);
-  out.push(pullHTML);
-  out.push.apply(out, paras.slice(insertAt, insertAt + 2));
-  const datoAt = Math.min(insertAt + 2, paras.length);
-  out.push(datoHTML);
-
-  const tail = paras.slice(datoAt);
   const inline = INLINE_IMAGES[a.slug];
   const imgHTML = inline
     ? `<figure class="inline-figure"><img src="${ap}${inline.file}" alt="${escHTML(inline.alt[loc.code])}" loading="lazy" decoding="async"></figure>`
     : '';
 
-  if (imgHTML && tail.length > 1) {
-    out.push.apply(out, tail.slice(0, -1));
-    out.push(imgHTML);
-    out.push(tail[tail.length - 1]);
-  } else {
-    out.push.apply(out, tail);
-    if (imgHTML) out.push(imgHTML);
+  // --- "What to know if you visit" section: genuinely practical content ---
+  const tipData = TIPS[loc.code][a.slug];
+  const tipsHTML = tipData
+    ? `<p>${escInline(tipData.intro)}</p>
+      <ul class="tips-list">
+      ${tipData.tips.map(function (t) { return `<li>${escInline(t)}</li>`; }).join('\n      ')}
+      </ul>`
+    : '';
+
+  // --- Related-articles sentence: real contextual internal links ---
+  const linkSlugs = LINKS[a.slug] || [];
+  let relatedHTML = '';
+  if (linkSlugs.length === 2) {
+    const l1 = bySlug(loc, linkSlugs[0]);
+    const l2 = bySlug(loc, linkSlugs[1]);
+    if (l1 && l2) {
+      relatedHTML = `<p class="in-article-links">${escHTML(s.relatedIntro)} <a href="article-${l1.slug}.html">${escHTML(l1.title)}</a> ${escHTML(s.relatedAnd)} <a href="article-${l2.slug}.html">${escHTML(l2.title)}</a>.</p>`;
+    }
   }
 
-  return out.join('\n      ');
+  return [
+    `<h2>${escHTML(s.h2Opening)}</h2>`,
+    p[0], p[1], p[2],
+    pullHTML,
+    `<h2>${escHTML(s.h2Origin)}</h2>`,
+    p[3], p[4],
+    datoHTML,
+    `<h2>${escHTML(s.h2Beyond)}</h2>`,
+    p[5], p[6], p[7],
+    imgHTML,
+    `<h2>${escHTML(s.h2Tips)}</h2>`,
+    tipsHTML,
+    `<h2>${escHTML(s.h2Closing)}</h2>`,
+    p[8],
+    relatedHTML
+  ].filter(Boolean).join('\n      ');
 }
 
 function renderSources(loc, a) {
