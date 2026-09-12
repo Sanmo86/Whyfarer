@@ -14,7 +14,7 @@ const { ARTICLES_ES } = require('./content.es.js');
 const { PAGES } = require('./pages.js');
 
 const ROOT = path.join(__dirname, '..');
-const V = '20260905'; // cache-buster — bump on every deploy
+const V = '20260912'; // cache-buster — bump on every deploy
 
 // ⚠️ UPDATE THIS after your first deploy (real Vercel URL or custom domain),
 // then run `node tools/generate.js` again and redeploy. Used for canonical
