@@ -38,7 +38,7 @@ Don't edit the `.html` files by hand — they're generated. Edit the source inst
 Then rebuild:
 
 ```bash
-npm run build
+npm run generate
 # or: node tools/generate.js
 ```
 

@@ -4,7 +4,7 @@
   "private": true,
   "description": "A magazine of world curiosities — static site generator and dev tools.",
   "scripts": {
-    "build": "node tools/generate.js",
+    "generate": "node tools/generate.js",
     "serve": "node tools/serve.js",
     "optimize-images": "node tools/optimize-images.js"
   },

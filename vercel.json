@@ -1,4 +1,6 @@
 {
+  "buildCommand": false,
+  "installCommand": false,
   "headers": [
     {
       "source": "/(.*).html",
