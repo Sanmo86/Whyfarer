@@ -130,6 +130,11 @@ const META = [
     sources: [
       { title: "Swedish fika: Sweden's 'premium coffee break' explained", publisher: 'Forbes', url: 'https://www.forbes.com/sites/davidnikel/2023/01/03/swedish-fika-swedens-premium-coffee-break-explained/' },
       { title: 'What is fika? An introduction to the Swedish coffee break', publisher: 'The Kitchn', url: 'https://www.thekitchn.com/what-in-the-world-is-fika-an-intro-to-the-swedish-coffee-break-the-art-of-fika-219297' }
+    ] },
+  { slug: 'usa-tipping-culture', category: 'americas', flag: '🇺🇸', hero: 'assets/img/eeuu.jpg',
+    sources: [
+      { title: 'Tipped Employees Under the FLSA (Fact Sheet #15)', publisher: 'U.S. Department of Labor', url: 'https://www.dol.gov/agencies/whd/fact-sheets/15-tipped-employees-flsa' },
+      { title: 'Americans have hated tipping almost as long as they’ve practiced it', publisher: 'National Geographic', url: 'https://www.nationalgeographic.com/history/article/tipping-history-united-states' }
     ] }
 ];
 

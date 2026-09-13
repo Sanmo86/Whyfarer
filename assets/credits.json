@@ -559,5 +559,27 @@
     "license_url": "https://creativecommons.org/licenses/by/2.0/",
     "foreign_landing_url": "https://www.flickr.com/photos/56551021@N06/16513583560",
     "source": "flickr"
+  },
+  "eeuu": {
+    "src": "assets/img/eeuu.jpg",
+    "title": "Wellsboro Diner, by day, Route 6, Wellsboro, Pennsylvania",
+    "creator": "The Library of Congress (John Margolies Roadside America archive)",
+    "creator_url": "https://www.flickr.com/photos/library_of_congress/",
+    "license": "pdm",
+    "license_version": "1.0",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "foreign_landing_url": "https://commons.wikimedia.org/wiki/File:Wellsboro_Diner,_by_day,_Route_6,_Wellsboro,_Pennsylvania_LOC_38768162301.jpg",
+    "source": "wikimedia commons"
+  },
+  "eeuu2": {
+    "src": "assets/img/eeuu2.jpg",
+    "title": "Jar for tips at a restaurant in New Jersey",
+    "creator": "Tomwsulcer",
+    "creator_url": "https://commons.wikimedia.org/wiki/User:Tomwsulcer",
+    "license": "cc0",
+    "license_version": "1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "foreign_landing_url": "https://commons.wikimedia.org/wiki/File:Jar_for_tips_at_a_restaurant_in_New_Jersey.JPG",
+    "source": "wikimedia commons"
   }
 }

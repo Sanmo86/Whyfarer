@@ -31,7 +31,8 @@ const LINKS = {
   'greece-breaking-plates': ['italy-cappuccino-rule', 'portugal-codfish'],
   'singapore-chewing-gum-ban': ['thailand-sacred-head', 'china-number-four'],
   'peru-guinea-pig': ['argentina-mate-sharing', 'india-sacred-cow'],
-  'sweden-fika': ['finland-sauna-queue', 'norway-babies-outside']
+  'sweden-fika': ['finland-sauna-queue', 'norway-babies-outside'],
+  'usa-tipping-culture': ['france-restaurant-bill', 'germany-splitting-bills']
 };
 
 const TIPS = {
@@ -298,6 +299,17 @@ const TIPS = {
         `Fika conversations are usually kept light — save serious work talk for the meeting room.`,
         `Solo fika is also completely normal — don't assume you need company to justify stepping away for coffee and a pastry.`
       ]
+    },
+    'usa-tipping-culture': {
+      intro: `A quick primer before your first restaurant bill in the U.S.:`,
+      tips: [
+        `At a sit-down restaurant, 18–20% is the baseline; anything below 15% signals real dissatisfaction with the service, not just a personal choice.`,
+        `Tip in cash when you can — it reaches the server faster and, in some states, avoids payroll processing that can delay or shrink what they actually take home.`,
+        `Bartenders expect $1–2 per drink, or 15–20% on a full tab; leave it even if you're just ordering a beer at the counter.`,
+        `Counter-service tip screens (coffee, ice cream, takeout) are optional — you're not expected to hit 20% there, though a couple of dollars is a nice gesture.`,
+        `For hotel housekeeping, leave $2–5 per night in cash in the room itself, ideally each morning rather than only at checkout, since staff often rotate.`,
+        `If a menu or receipt already shows a "service charge" or "auto-gratuity" — common for large groups — you generally don't need to tip again on top of it; check the fine print first.`
+      ]
     }
   },
 
@@ -563,6 +575,17 @@ const TIPS = {
         `Los rollos de canela (kanelbullar) son la opción clásica, pero cualquier combinación de café y dulce encaja en el ritual.`,
         `Las conversaciones de fika suelen mantenerse ligeras: guarda los temas serios de trabajo para la sala de reuniones.`,
         `El fika en solitario también es completamente normal: no asumas que necesitas compañía para justificar una pausa con café y un dulce.`
+      ]
+    },
+    'usa-tipping-culture': {
+      intro: `Una guía rápida antes de tu primera cuenta de restaurante en Estados Unidos:`,
+      tips: [
+        `En un restaurante de mesa y mantel, el 18-20 % es la base; menos del 15 % se interpreta como una señal real de descontento con el servicio, no como una elección personal cualquiera.`,
+        `Paga la propina en efectivo si puedes: llega antes al camarero y, en algunos estados, evita procesos de nómina que pueden retrasar o reducir lo que finalmente se lleva a casa.`,
+        `Los bartenders esperan entre 1 y 2 dólares por bebida, o un 15-20 % sobre la cuenta completa; déjala incluso si solo pides una cerveza en la barra.`,
+        `Las pantallas de propina en mostrador (café, helados, comida para llevar) son opcionales: no se espera que llegues al 20 % ahí, aunque un par de dólares siempre se agradece.`,
+        `Para la limpieza de hotel, deja entre 2 y 5 dólares en efectivo en la propia habitación, idealmente cada mañana y no solo al hacer el check-out, ya que el personal suele rotar.`,
+        `Si la carta o la cuenta ya incluye un "service charge" o "auto-gratuity" —habitual en grupos grandes—, normalmente no hace falta dejar propina otra vez encima; conviene revisar la letra pequeña primero.`
       ]
     }
   }
