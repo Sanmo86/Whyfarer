@@ -135,6 +135,11 @@ const META = [
     sources: [
       { title: 'Tipped Employees Under the FLSA (Fact Sheet #15)', publisher: 'U.S. Department of Labor', url: 'https://www.dol.gov/agencies/whd/fact-sheets/15-tipped-employees-flsa' },
       { title: 'Americans have hated tipping almost as long as they’ve practiced it', publisher: 'National Geographic', url: 'https://www.nationalgeographic.com/history/article/tipping-history-united-states' }
+    ] },
+  { slug: 'ghana-fantasy-coffins', category: 'africa', flag: '🇬🇭', hero: 'assets/img/ghana.jpg',
+    sources: [
+      { title: "Sprucing Up the Pine Box: Inside Ghana's Novelty Coffin Industry", publisher: 'Atlas Obscura', url: 'https://www.atlasobscura.com/articles/ghana-novelty-coffins' },
+      { title: 'Ghanaian Fantasy Coffins', publisher: 'Pittsburgh Institute of Mortuary Science', url: 'https://pims.edu/ghanaian-fantasy-coffins/' }
     ] }
 ];
 

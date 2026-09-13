@@ -581,5 +581,27 @@
     "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
     "foreign_landing_url": "https://commons.wikimedia.org/wiki/File:Jar_for_tips_at_a_restaurant_in_New_Jersey.JPG",
     "source": "wikimedia commons"
+  },
+  "ghana": {
+    "src": "assets/img/ghana.jpg",
+    "title": "Kane Kwei Carpentry Workshop, Accra",
+    "creator": "David Stanley",
+    "creator_url": "https://www.flickr.com/people/davidstanleytravel/",
+    "license": "by",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "foreign_landing_url": "https://commons.wikimedia.org/wiki/File:Kane_Kwei_Carpentry_Workshop_(21938952908).jpg",
+    "source": "wikimedia commons"
+  },
+  "ghana2": {
+    "src": "assets/img/ghana2.jpg",
+    "title": "Fish-shaped fantasy coffin under construction",
+    "creator": "David Stanley",
+    "creator_url": "https://www.flickr.com/people/davidstanleytravel/",
+    "license": "by",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "foreign_landing_url": "https://commons.wikimedia.org/wiki/File:Fish_Coffin_(21949749018).jpg",
+    "source": "wikimedia commons"
   }
 }

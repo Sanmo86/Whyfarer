@@ -32,7 +32,8 @@ const LINKS = {
   'singapore-chewing-gum-ban': ['thailand-sacred-head', 'china-number-four'],
   'peru-guinea-pig': ['argentina-mate-sharing', 'india-sacred-cow'],
   'sweden-fika': ['finland-sauna-queue', 'norway-babies-outside'],
-  'usa-tipping-culture': ['france-restaurant-bill', 'germany-splitting-bills']
+  'usa-tipping-culture': ['france-restaurant-bill', 'germany-splitting-bills'],
+  'ghana-fantasy-coffins': ['mexico-day-of-the-dead', 'morocco-haggling']
 };
 
 const TIPS = {
@@ -310,6 +311,17 @@ const TIPS = {
         `For hotel housekeeping, leave $2–5 per night in cash in the room itself, ideally each morning rather than only at checkout, since staff often rotate.`,
         `If a menu or receipt already shows a "service charge" or "auto-gratuity" — common for large groups — you generally don't need to tip again on top of it; check the fine print first.`
       ]
+    },
+    'ghana-fantasy-coffins': {
+      intro: `A few pointers if you're curious about coffin workshops or attend a funeral in Ghana:`,
+      tips: [
+        `If invited to a funeral, ask the family about the dress code in advance — red and black usually signal mourning, while white or bright colors can mark the celebration of a long, full life.`,
+        `Funerals are often held on Saturdays, sometimes weeks or months after the death itself, so don't assume the burial happens right away.`,
+        `Workshops like the original Kane Kwei Carpentry Workshop in Teshie (Accra) welcome visitors, but always ask permission before photographing artisans or coffins still in progress.`,
+        `If you'd like a souvenir rather than a full-size coffin, ask about miniature versions — several workshops make small collectible replicas specifically for visitors.`,
+        `Bringing a small cash contribution toward funeral costs is a normal, expected gesture if you attend as a guest, even as a foreigner.`,
+        `Treat the coffin's shape with the same respect you'd give any funeral custom — to the family, it's a sincere tribute, not a joke.`
+      ]
     }
   },
 
@@ -586,6 +598,17 @@ const TIPS = {
         `Las pantallas de propina en mostrador (café, helados, comida para llevar) son opcionales: no se espera que llegues al 20 % ahí, aunque un par de dólares siempre se agradece.`,
         `Para la limpieza de hotel, deja entre 2 y 5 dólares en efectivo en la propia habitación, idealmente cada mañana y no solo al hacer el check-out, ya que el personal suele rotar.`,
         `Si la carta o la cuenta ya incluye un "service charge" o "auto-gratuity" —habitual en grupos grandes—, normalmente no hace falta dejar propina otra vez encima; conviene revisar la letra pequeña primero.`
+      ]
+    },
+    'ghana-fantasy-coffins': {
+      intro: `Algunos consejos si te interesan los talleres de ataúdes o asistes a un funeral en Ghana:`,
+      tips: [
+        `Si te invitan a un funeral, pregunta a la familia por el código de vestimenta con antelación: el rojo y el negro suelen indicar luto, mientras que el blanco o los colores vivos pueden marcar la celebración de una vida larga y plena.`,
+        `Los funerales suelen celebrarse en sábado, a veces semanas o meses después de la muerte, así que no des por hecho que el entierro ocurre de inmediato.`,
+        `Talleres como el original Kane Kwei, en Teshie (Accra), reciben visitas, pero pide siempre permiso antes de fotografiar a los artesanos o los ataúdes que aún están en proceso.`,
+        `Si buscas un recuerdo en lugar de un ataúd a tamaño real, pregunta por las versiones en miniatura: varios talleres fabrican réplicas coleccionables pequeñas pensadas para visitantes.`,
+        `Llevar una pequeña aportación económica para los gastos del funeral es un gesto normal y esperado si asistes como invitado, incluso siendo extranjero.`,
+        `Trata la forma del ataúd con el mismo respeto que darías a cualquier costumbre funeraria: para la familia es un tributo sincero, no una broma.`
       ]
     }
   }

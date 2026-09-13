@@ -30,7 +30,8 @@ const INLINE_IMAGES = {
   'singapore-chewing-gum-ban': { file: 'assets/img/singapur2.jpg',   alt: { en: 'A train platform in the Singapore MRT', es: 'Un andén del metro (MRT) de Singapur' } },
   'peru-guinea-pig':           { file: 'assets/img/peru2.jpg',       alt: { en: 'A village in the Andes mountains of Peru', es: 'Un pueblo en las montañas andinas de Perú' } },
   'sweden-fika':                { file: 'assets/img/suecia2.jpg',    alt: { en: 'Coffee and pastries on a café table in Stockholm', es: 'Café y pasteles en la mesa de una cafetería en Estocolmo' } },
-  'usa-tipping-culture':        { file: 'assets/img/eeuu2.jpg',      alt: { en: 'A jar for tips on a counter in an American restaurant', es: 'Un bote de propinas en el mostrador de un restaurante estadounidense' } }
+  'usa-tipping-culture':        { file: 'assets/img/eeuu2.jpg',      alt: { en: 'A jar for tips on a counter in an American restaurant', es: 'Un bote de propinas en el mostrador de un restaurante estadounidense' } },
+  'ghana-fantasy-coffins':      { file: 'assets/img/ghana2.jpg',     alt: { en: 'A fish-shaped fantasy coffin under construction in a Ghanaian workshop', es: 'Un ataúd de fantasía con forma de pez en construcción en un taller ghanés' } }
 };
 
 if (typeof module !== 'undefined' && module.exports) {
