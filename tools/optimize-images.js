@@ -10,7 +10,7 @@ const path = require('path');
 const { Jimp } = require('jimp');
 
 const IMG_DIR = path.join(__dirname, '..', 'assets', 'img');
-const MAX_WIDTH = 1400;
+const MAX_DIMENSION = 1400; // longest side — catches tall portrait photos too, not just wide ones
 const QUALITY = 78;
 
 (async function main() {
@@ -23,8 +23,10 @@ const QUALITY = 78;
     totalBefore += before;
 
     const img = await Jimp.read(filePath);
-    if (img.bitmap.width > MAX_WIDTH) {
-      img.resize({ w: MAX_WIDTH });
+    const longest = Math.max(img.bitmap.width, img.bitmap.height);
+    if (longest > MAX_DIMENSION) {
+      if (img.bitmap.width >= img.bitmap.height) img.resize({ w: MAX_DIMENSION });
+      else img.resize({ h: MAX_DIMENSION });
     }
     const buffer = await img.getBuffer('image/jpeg', { quality: QUALITY });
     fs.writeFileSync(filePath, buffer);

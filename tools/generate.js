@@ -752,6 +752,58 @@ function buildStaticPage(loc, key) {
 }
 
 /* ---------------------------------------------------------------- */
+/* 404 PAGE                                                          */
+/* ---------------------------------------------------------------- */
+
+// A single, bilingual, root-level 404.html. Vercel serves this file for
+// ANY unmatched path on the whole site (including under /es/), which means
+// the browser's address bar can show a URL at any depth while this exact
+// HTML is displayed — every asset and link here MUST be a root-relative
+// ("/...") path, never a bare relative one, or it would 404 a second time.
+function build404Page() {
+  const html = `<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+${gaSnippet()}
+<title>Page Not Found · Página No Encontrada — WHYFARER</title>
+<meta name="robots" content="noindex">
+<meta name="color-scheme" content="light">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400;1,8..60,500&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/styles.css?v=${V}">
+</head>
+<body>
+  <header class="masthead" data-masthead>
+    <div class="container masthead-bar">
+      <a href="/index.html" class="brand"><span>WHYFARER</span><span class="brand-dot">·</span></a>
+    </div>
+  </header>
+  <main id="main">
+    <div class="container archive-head">
+      <p class="kicker">404</p>
+      <h1>This page took a wrong turn<br>Esta página se perdió por el camino</h1>
+      <p class="dek">We couldn't find what you were looking for — maybe it moved, maybe it never existed.<br>No encontramos lo que buscabas: puede que se haya movido, puede que nunca haya existido.</p>
+      <p style="margin-top:2rem; display:flex; gap:.9rem; flex-wrap:wrap;">
+        <a class="btn btn-primary" href="/index.html">Back to home <span class="btn-arrow">→</span></a>
+        <a class="btn btn-ghost" href="/es/index.html">Volver al inicio <span class="btn-arrow">→</span></a>
+      </p>
+      <p style="margin-top:1.2rem;">
+        <a href="/archive.html">Browse the full archive ↗</a> &nbsp;·&nbsp; <a href="/es/archive.html">Ver el archivo completo ↗</a>
+      </p>
+    </div>
+  </main>
+  <script defer src="/main.js?v=${V}"></script>
+</body>
+</html>
+`;
+  fs.writeFileSync(path.join(ROOT, '404.html'), html);
+}
+
+/* ---------------------------------------------------------------- */
 /* SITEMAP + ROBOTS                                                   */
 /* ---------------------------------------------------------------- */
 
@@ -802,6 +854,7 @@ Sitemap: ${SITE_URL}/sitemap.xml
   STATIC_PAGE_KEYS.forEach(function (key) { buildStaticPage(loc, key); });
 });
 
+build404Page();
 buildSitemapAndRobots();
 
 console.log('Generated EN (root) + ES (/es) — index, archive, credits + ' + META.length + ' articles each.');
