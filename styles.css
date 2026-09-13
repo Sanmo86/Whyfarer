@@ -548,6 +548,11 @@ figure.article-hero-figure { max-width: 740px; padding: 0 20px; }
 .doc-body a:hover { color: var(--accent); }
 .doc-meta { font-family: var(--sans); font-size: .85rem; color: var(--ink-mute); margin-top: -.5rem; }
 .contact-cta { margin-top: .5rem; }
+/* .doc-body a beats .btn-primary on specificity alone (0,1,1 vs 0,1,0),
+   which was turning the "Email us" button's text invisible (same dark
+   color as its own dark background). Re-assert the light button text. */
+.doc-body .btn-primary { color: var(--bg); }
+.doc-body .btn-primary:hover { color: var(--bg); }
 
 /* --- Cookie banner --- */
 .cookie-banner {
