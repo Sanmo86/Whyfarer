@@ -14,7 +14,7 @@ const { ARTICLES_ES } = require('./content.es.js');
 const { PAGES } = require('./pages.js');
 
 const ROOT = path.join(__dirname, '..');
-const V = '20260912b'; // cache-buster — bump on every deploy
+const V = '20260913'; // cache-buster — bump on every deploy
 
 // ⚠️ UPDATE THIS after your first deploy (real Vercel URL or custom domain),
 // then run `node tools/generate.js` again and redeploy. Used for canonical
@@ -569,13 +569,13 @@ function buildArticle(loc, a) {
   <div class="progress-bar" aria-hidden="true"></div>
   <main id="main">
     <article>
-      <div class="container article-hero">
+      <div class="article-hero">
         <p class="kicker">${escHTML(a.kicker)}</p>
         <h1>${escHTML(a.title)}</h1>
         <p class="dek">${escInline(a.dek)}</p>
         <p class="meta-row"><span>${s.byline}</span><span class="dot"></span><span>${escHTML(a.readTime)} ${s.minRead}</span><span class="dot"></span><span>${a.flag} ${escHTML(a.country)}</span></p>
       </div>
-      <figure class="article-hero-figure container">
+      <figure class="article-hero-figure">
         <div class="hero-parallax photo-frame">
           <img src="${ap}${a.hero}" alt="${escHTML(a.alt)}" fetchpriority="high">
         </div>
