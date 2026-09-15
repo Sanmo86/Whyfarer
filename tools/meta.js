@@ -140,6 +140,11 @@ const META = [
     sources: [
       { title: "Sprucing Up the Pine Box: Inside Ghana's Novelty Coffin Industry", publisher: 'Atlas Obscura', url: 'https://www.atlasobscura.com/articles/ghana-novelty-coffins' },
       { title: 'Ghanaian Fantasy Coffins', publisher: 'Pittsburgh Institute of Mortuary Science', url: 'https://pims.edu/ghanaian-fantasy-coffins/' }
+    ] },
+  { slug: 'nigeria-yoruba-twins', category: 'africa', flag: '🇳🇬', hero: 'assets/img/nigeria.jpg',
+    sources: [
+      { title: 'Seeing double in Nigeria’s twins capital of the world', publisher: 'Al Jazeera', url: 'https://www.aljazeera.com/gallery/2024/10/17/seeing-double-in-nigerias-twins-capital-of-the-world' },
+      { title: 'Ere Ibeji Figures (Yoruba peoples)', publisher: 'Smarthistory', url: 'https://smarthistory.org/ere-figures-yoruba-peoples/' }
     ] }
 ];
 

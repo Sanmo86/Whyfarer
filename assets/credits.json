@@ -603,5 +603,27 @@
     "license_url": "https://creativecommons.org/licenses/by/2.0/",
     "foreign_landing_url": "https://commons.wikimedia.org/wiki/File:Fish_Coffin_(21949749018).jpg",
     "source": "wikimedia commons"
+  },
+  "nigeria": {
+    "src": "assets/img/nigeria.jpg",
+    "title": "Twin dolls (ère ìbejì), Yoruba people, Nigeria",
+    "creator": "Mickey Mystique",
+    "creator_url": "https://commons.wikimedia.org/wiki/User:Mickey_Mystique",
+    "license": "by-sa",
+    "license_version": "4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "foreign_landing_url": "https://commons.wikimedia.org/wiki/File:Twin_dolls,_Nigeria,_Yoruba_people,_01.jpg",
+    "source": "wikimedia commons"
+  },
+  "nigeria2": {
+    "src": "assets/img/nigeria2.jpg",
+    "title": "A busy yam market in Mile 12, Lagos, Nigeria",
+    "creator": "ShoT88 Studios",
+    "creator_url": "https://commons.wikimedia.org/wiki/User:ShoT88_Studios",
+    "license": "by-sa",
+    "license_version": "4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "foreign_landing_url": "https://commons.wikimedia.org/wiki/File:A_Busy_Market_in_Mile_12,_Lagos-_Nigeria.jpg",
+    "source": "wikimedia commons"
   }
 }

@@ -33,7 +33,8 @@ const LINKS = {
   'peru-guinea-pig': ['argentina-mate-sharing', 'india-sacred-cow'],
   'sweden-fika': ['finland-sauna-queue', 'norway-babies-outside'],
   'usa-tipping-culture': ['france-restaurant-bill', 'germany-splitting-bills'],
-  'ghana-fantasy-coffins': ['mexico-day-of-the-dead', 'morocco-haggling']
+  'ghana-fantasy-coffins': ['mexico-day-of-the-dead', 'morocco-haggling'],
+  'nigeria-yoruba-twins': ['india-sacred-cow', 'ghana-fantasy-coffins']
 };
 
 const TIPS = {
@@ -322,6 +323,17 @@ const TIPS = {
         `Bringing a small cash contribution toward funeral costs is a normal, expected gesture if you attend as a guest, even as a foreigner.`,
         `Treat the coffin's shape with the same respect you'd give any funeral custom — to the family, it's a sincere tribute, not a joke.`
       ]
+    },
+    'nigeria-yoruba-twins': {
+      intro: `A few pointers if your travels take you through Yoruba country:`,
+      tips: [
+        `If you meet a set of twins, asking their names is a great icebreaker — nearly every Yoruba pair is named Taiwo and Kehinde, and locals enjoy explaining which is which.`,
+        `Igbo-Ora holds an annual twins festival, usually in October — check current dates if you'd like to attend; matching outfits and photography are welcomed at the public event.`,
+        `Genuine warmth toward twins and their families is well received — the belief that twins bring blessing runs deep, and outsiders showing interest is generally seen as a compliment, not an intrusion.`,
+        `If you're giving a small gift to a family with twins, offer it to both, not just one — treating the pair equally matters.`,
+        `Should you encounter an ère ìbejì figure in someone's home, treat it as you would any spiritual object — admire it, but don't touch it without being invited to.`,
+        `Attitudes toward twins vary significantly across Nigeria's many ethnic groups — let the people you're with guide the conversation rather than assuming one region's beliefs apply everywhere.`
+      ]
     }
   },
 
@@ -609,6 +621,17 @@ const TIPS = {
         `Si buscas un recuerdo en lugar de un ataúd a tamaño real, pregunta por las versiones en miniatura: varios talleres fabrican réplicas coleccionables pequeñas pensadas para visitantes.`,
         `Llevar una pequeña aportación económica para los gastos del funeral es un gesto normal y esperado si asistes como invitado, incluso siendo extranjero.`,
         `Trata la forma del ataúd con el mismo respeto que darías a cualquier costumbre funeraria: para la familia es un tributo sincero, no una broma.`
+      ]
+    },
+    'nigeria-yoruba-twins': {
+      intro: `Algunos consejos si tu viaje te lleva por tierras yoruba:`,
+      tips: [
+        `Si conoces a una pareja de gemelos, preguntar sus nombres es una buena forma de romper el hielo: casi todas las parejas yoruba se llaman Taiwo y Kehinde, y a la gente le gusta explicar quién es quién.`,
+        `Igbo-Ora celebra un festival anual de gemelos, normalmente en octubre: consulta las fechas actuales si quieres asistir; en el evento público se aceptan bien tanto la ropa a juego como las fotografías.`,
+        `Mostrar un interés cálido y sincero hacia los gemelos y sus familias suele ser bien recibido: la creencia de que los gemelos traen bendición está muy arraigada, y que un visitante se interese se percibe generalmente como un cumplido, no como una intrusión.`,
+        `Si vas a dar un pequeño regalo a una familia con gemelos, ofrécelo a los dos, no solo a uno: tratar a la pareja por igual importa.`,
+        `Si te encuentras con una figura ère ìbejì en casa de alguien, trátala como tratarías cualquier objeto espiritual: admírala, pero no la toques sin que te inviten a hacerlo.`,
+        `Las actitudes hacia los gemelos varían mucho entre los distintos grupos étnicos de Nigeria: deja que las personas con las que estés guíen la conversación en lugar de dar por hecho que las creencias de una región se aplican a todo el país.`
       ]
     }
   }
